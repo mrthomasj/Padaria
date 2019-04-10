@@ -11,3 +11,4 @@ c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Pa
 c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.csproj.CopyComplete
 c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.exe
 c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.pdb
+c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.UserForm.resources
