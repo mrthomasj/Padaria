@@ -35,7 +35,7 @@
             this.mnItCadUser = new System.Windows.Forms.ToolStripMenuItem();
             this.mnProd = new System.Windows.Forms.ToolStripMenuItem();
             this.mnItCadProd = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnItEstoque = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +86,7 @@
             // 
             this.mnProd.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnItCadProd,
-            this.consultaEstoqueToolStripMenuItem});
+            this.mnItEstoque});
             this.mnProd.Enabled = false;
             this.mnProd.Name = "mnProd";
             this.mnProd.Size = new System.Drawing.Size(67, 20);
@@ -97,12 +97,14 @@
             this.mnItCadProd.Name = "mnItCadProd";
             this.mnItCadProd.Size = new System.Drawing.Size(180, 22);
             this.mnItCadProd.Text = "Cadastro";
+            this.mnItCadProd.Click += new System.EventHandler(this.mnItCadProd_Click);
             // 
-            // consultaEstoqueToolStripMenuItem
+            // mnItEstoque
             // 
-            this.consultaEstoqueToolStripMenuItem.Name = "consultaEstoqueToolStripMenuItem";
-            this.consultaEstoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultaEstoqueToolStripMenuItem.Text = "Consulta Estoque";
+            this.mnItEstoque.Name = "mnItEstoque";
+            this.mnItEstoque.Size = new System.Drawing.Size(180, 22);
+            this.mnItEstoque.Text = "Consulta Estoque";
+            this.mnItEstoque.Click += new System.EventHandler(this.consultaEstoqueToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -116,7 +118,7 @@
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Gerenciamento de Padaria";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -135,7 +137,7 @@
         public System.Windows.Forms.ToolStripMenuItem mnItCadUser;
         public System.Windows.Forms.ToolStripMenuItem mnProd;
         public System.Windows.Forms.ToolStripMenuItem mnItCadProd;
-        public System.Windows.Forms.ToolStripMenuItem consultaEstoqueToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem mnItEstoque;
     }
 }
 

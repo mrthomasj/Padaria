@@ -137,5 +137,30 @@ namespace Padaria
                 if (ct is ComboBox) ct.Text = "";
             }
         }
+
+        public bool validaValor(string str, Control ct)
+        {
+            try
+            {
+                decimal check;
+                check = decimal.Parse(str);
+                if(check > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Preencher somente com números naturais maiores que 0.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Dados inválidos! Por favor, insira apenas algarismos numéricos.", "Erro");
+                ct.Focus();
+                return false;
+            }
+        }
+
     }
 }

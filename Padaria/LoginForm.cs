@@ -31,6 +31,32 @@ namespace Padaria
                     ((MainForm)this.MdiParent).mnItCadUser.Visible = true;
                 }
                 ((MainForm)this.MdiParent).currentUser = user;
+
+                ((MainForm)this.MdiParent).Text = "Gerenciamento de Padaria | Usuário ativo: " + user;
+
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Credenciais não conferem, favor verificar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        
+
+        private void showPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void showPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                txtPass.UseSystemPasswordChar = true;
             }
         }
     }

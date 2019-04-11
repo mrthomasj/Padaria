@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panFunc = new System.Windows.Forms.Panel();
+            this.txtCep = new System.Windows.Forms.TextBox();
+            this.lblCep = new System.Windows.Forms.Label();
             this.txtTel2 = new System.Windows.Forms.TextBox();
             this.lblTel2 = new System.Windows.Forms.Label();
             this.txtTel1 = new System.Windows.Forms.TextBox();
@@ -57,8 +59,8 @@
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.lblLogin = new System.Windows.Forms.Label();
             this.btnCad = new System.Windows.Forms.Button();
-            this.txtCep = new System.Windows.Forms.TextBox();
-            this.lblCep = new System.Windows.Forms.Label();
+            this.btnShowPass = new System.Windows.Forms.Button();
+            this.btnShowRePass = new System.Windows.Forms.Button();
             this.panFunc.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +93,22 @@
             this.panFunc.Name = "panFunc";
             this.panFunc.Size = new System.Drawing.Size(796, 163);
             this.panFunc.TabIndex = 0;
+            // 
+            // txtCep
+            // 
+            this.txtCep.Location = new System.Drawing.Point(18, 131);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(111, 20);
+            this.txtCep.TabIndex = 21;
+            // 
+            // lblCep
+            // 
+            this.lblCep.AutoSize = true;
+            this.lblCep.Location = new System.Drawing.Point(15, 115);
+            this.lblCep.Name = "lblCep";
+            this.lblCep.Size = new System.Drawing.Size(29, 13);
+            this.lblCep.TabIndex = 20;
+            this.lblCep.Text = "Cep:";
             // 
             // txtTel2
             // 
@@ -264,6 +282,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtLogin);
             this.panel1.Controls.Add(this.lblLogin);
+            this.panel1.Controls.Add(this.btnShowPass);
+            this.panel1.Controls.Add(this.btnShowRePass);
             this.panel1.Location = new System.Drawing.Point(68, 229);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(796, 51);
@@ -275,6 +295,7 @@
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.Size = new System.Drawing.Size(111, 20);
             this.txtRePass.TabIndex = 17;
+            this.txtRePass.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -291,6 +312,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(111, 20);
             this.txtPass.TabIndex = 15;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -327,21 +349,37 @@
             this.btnCad.UseVisualStyleBackColor = true;
             this.btnCad.Click += new System.EventHandler(this.btnCad_Click);
             // 
-            // txtCep
+            // btnShowPass
             // 
-            this.txtCep.Location = new System.Drawing.Point(18, 131);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(111, 20);
-            this.txtCep.TabIndex = 21;
+            this.btnShowPass.FlatAppearance.BorderSize = 0;
+            this.btnShowPass.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnShowPass.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.btnShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowPass.Location = new System.Drawing.Point(338, 11);
+            this.btnShowPass.Name = "btnShowPass";
+            this.btnShowPass.Size = new System.Drawing.Size(42, 34);
+            this.btnShowPass.TabIndex = 20;
+            this.btnShowPass.Text = "👁";
+            this.btnShowPass.UseVisualStyleBackColor = true;
+            this.btnShowPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShowPass_MouseDown);
+            this.btnShowPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShowPass_MouseUp);
             // 
-            // lblCep
+            // btnShowRePass
             // 
-            this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(15, 115);
-            this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(29, 13);
-            this.lblCep.TabIndex = 20;
-            this.lblCep.Text = "Cep:";
+            this.btnShowRePass.FlatAppearance.BorderSize = 0;
+            this.btnShowRePass.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnShowRePass.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.btnShowRePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowRePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowRePass.Location = new System.Drawing.Point(496, 11);
+            this.btnShowRePass.Name = "btnShowRePass";
+            this.btnShowRePass.Size = new System.Drawing.Size(42, 34);
+            this.btnShowRePass.TabIndex = 21;
+            this.btnShowRePass.Text = "👁";
+            this.btnShowRePass.UseVisualStyleBackColor = true;
+            this.btnShowRePass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShowRePass_MouseDown);
+            this.btnShowRePass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShowRePass_MouseUp);
             // 
             // UserForm
             // 
@@ -395,5 +433,7 @@
         private System.Windows.Forms.Button btnCad;
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label lblCep;
+        private System.Windows.Forms.Button btnShowPass;
+        private System.Windows.Forms.Button btnShowRePass;
     }
 }

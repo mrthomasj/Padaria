@@ -57,5 +57,33 @@ namespace Padaria
                 user.Show();
             }
         }
+
+        private void mnItCadProd_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<CadProdForm>().Count() == 1)
+            {
+                MessageBox.Show("Utilize a tela de cadastro aberta!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                CadProdForm cadProd = new CadProdForm();
+                cadProd.MdiParent = this;
+                cadProd.Show();
+            }
+        }
+
+        private void consultaEstoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<EstoqueForm>().Count() == 1)
+            {
+                MessageBox.Show("Utilize a tela de cadastro aberta!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                EstoqueForm estoque = new EstoqueForm();
+                estoque.MdiParent = this;
+                estoque.Show();
+            }
+        }
     }
 }

@@ -71,5 +71,38 @@ namespace Padaria
 
 
         }
+
+        
+        private void btnShowPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void btnShowPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void btnShowRePass_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                txtRePass.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void btnShowRePass_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                txtRePass.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

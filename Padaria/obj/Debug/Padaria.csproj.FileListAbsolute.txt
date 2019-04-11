@@ -26,3 +26,5 @@ C:\Padaria\Padaria\obj\Debug\Padaria.csproj.CoreCompileInputs.cache
 C:\Padaria\Padaria\obj\Debug\Padaria.csproj.CopyComplete
 C:\Padaria\Padaria\obj\Debug\Padaria.exe
 C:\Padaria\Padaria\obj\Debug\Padaria.pdb
+C:\Users\Neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.CadProdForm.resources
+C:\Users\Neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.EstoqueForm.resources

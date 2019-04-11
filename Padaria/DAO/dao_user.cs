@@ -68,7 +68,7 @@ namespace Padaria.DAO
 
             MySqlCommand cm = cn.CreateCommand();
             cm.CommandText = sqlQry;
-            cm.Parameters.AddWithValue("@nome", nome);
+            cm.Parameters.AddWithValue("@name", nome);
             cm.Parameters.AddWithValue("@dtNasc", dtNasc);
             cm.Parameters.AddWithValue("@cpf", cpf);
             cm.Parameters.AddWithValue("@cep", cep);
@@ -81,7 +81,7 @@ namespace Padaria.DAO
             try
             {
                 cm.ExecuteNonQuery();
-                MessageBox.Show("Cadastro efetuado com sucesso!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
             catch (Exception ex)
             {
@@ -117,7 +117,7 @@ namespace Padaria.DAO
         public string doLogin(string user, string pass)
         {
             MySqlConnection cn = new MySqlConnection();
-            string cs = "server=localhost;User id=root;passwor='';database=dbo_padaria";
+            string cs = "server=localhost;User id=root;password='';database=dbo_padaria";
 
             cn.ConnectionString = cs;
 

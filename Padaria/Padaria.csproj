@@ -47,7 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadProdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadProdForm.Designer.cs">
+      <DependentUpon>CadProdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\dao_product.cs" />
     <Compile Include="DAO\dao_user.cs" />
+    <Compile Include="EstoqueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstoqueForm.Designer.cs">
+      <DependentUpon>EstoqueForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +82,12 @@
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Validacoes.cs" />
+    <EmbeddedResource Include="CadProdForm.resx">
+      <DependentUpon>CadProdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstoqueForm.resx">
+      <DependentUpon>EstoqueForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
