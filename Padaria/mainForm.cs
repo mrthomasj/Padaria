@@ -85,5 +85,45 @@ namespace Padaria
                 estoque.Show();
             }
         }
+
+        private void mnItLogout_Click(object sender, EventArgs e)
+        {
+            if (!mnItLogin.Visible)
+            {
+                DialogResult result = MessageBox.Show("Você deseja efetuar logout do sistema?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+
+                    List<Form> openForms = new List<Form>();
+                    foreach (Form f in Application.OpenForms)
+                    {
+                        openForms.Add(f);
+                    }
+
+                    foreach (Form f in openForms)
+                    {
+                        if (f.Name != "MainForm")
+                        {
+                            f.Close();
+                        }
+                    }
+
+                    mnProd.Enabled = false;
+                    mnItCadUser.Visible = false;
+                    mnItLogin.Visible = true;
+                    mnItLogout.Visible = false;
+
+                    currentUser = "";
+
+                    
+
+                    LoginForm login = new LoginForm();
+                    login.MdiParent = this;
+                    login.Show();
+                    this.Text = "Gerenciamento de Padaria";
+                }
+
+            }
+        }
     }
 }

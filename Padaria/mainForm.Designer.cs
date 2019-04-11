@@ -73,6 +73,7 @@
             this.mnItLogout.Size = new System.Drawing.Size(180, 22);
             this.mnItLogout.Text = "Logout...";
             this.mnItLogout.Visible = false;
+            this.mnItLogout.Click += new System.EventHandler(this.mnItLogout_Click);
             // 
             // mnItCadUser
             // 
