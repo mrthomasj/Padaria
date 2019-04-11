@@ -80,6 +80,7 @@
             this.mnItCadUser.Size = new System.Drawing.Size(180, 22);
             this.mnItCadUser.Text = "Cadastro";
             this.mnItCadUser.Visible = false;
+            this.mnItCadUser.Click += new System.EventHandler(this.mnItCadUser_Click);
             // 
             // mnProd
             // 

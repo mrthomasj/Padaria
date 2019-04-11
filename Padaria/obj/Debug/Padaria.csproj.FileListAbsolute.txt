@@ -12,3 +12,17 @@ c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Pa
 c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.exe
 c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.pdb
 c:\users\neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.UserForm.resources
+C:\Padaria\Padaria\bin\Debug\Padaria.exe.config
+C:\Padaria\Padaria\bin\Debug\Padaria.exe
+C:\Padaria\Padaria\bin\Debug\Padaria.pdb
+C:\Padaria\Padaria\bin\Debug\MySql.Data.dll
+C:\Padaria\Padaria\obj\Debug\Padaria.csprojAssemblyReference.cache
+C:\Padaria\Padaria\obj\Debug\Padaria.LoginForm.resources
+C:\Padaria\Padaria\obj\Debug\Padaria.MainForm.resources
+C:\Padaria\Padaria\obj\Debug\Padaria.Properties.Resources.resources
+C:\Padaria\Padaria\obj\Debug\Padaria.UserForm.resources
+C:\Padaria\Padaria\obj\Debug\Padaria.csproj.GenerateResource.cache
+C:\Padaria\Padaria\obj\Debug\Padaria.csproj.CoreCompileInputs.cache
+C:\Padaria\Padaria\obj\Debug\Padaria.csproj.CopyComplete
+C:\Padaria\Padaria\obj\Debug\Padaria.exe
+C:\Padaria\Padaria\obj\Debug\Padaria.pdb

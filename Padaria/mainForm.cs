@@ -12,6 +12,8 @@ namespace Padaria
 {
     public partial class MainForm : Form
     {
+
+        public string currentUser;
         public MainForm()
         {
             InitializeComponent();
@@ -40,6 +42,20 @@ namespace Padaria
             LoginForm login = new LoginForm();
             login.MdiParent = this;
             login.Show();
+        }
+
+        private void mnItCadUser_Click(object sender, EventArgs e)
+        {
+            if(Application.OpenForms.OfType<UserForm>().Count() == 1)
+            {
+                MessageBox.Show("Utilize a tela de cadastro aberta!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                UserForm user = new UserForm();
+                user.MdiParent = this;
+                user.Show();
+            }
         }
     }
 }

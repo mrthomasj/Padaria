@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace Padaria
 {
-    class Validacoes
+    public class Validacoes
     {
         public bool validaUF(string str, Control ct)
         {
