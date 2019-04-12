@@ -59,5 +59,14 @@ namespace Padaria
                 txtPass.UseSystemPasswordChar = true;
             }
         }
+
+        private void txtPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                btnLogin_Click(btnLogin, e);
+            }
+
+        }
     }
 }

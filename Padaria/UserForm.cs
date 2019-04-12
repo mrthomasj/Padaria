@@ -70,6 +70,9 @@ namespace Padaria
                 txtTel1.Text, txtTel2.Text, int.Parse(txtMatric.Text), txtLogin.Text, txtPass.Text);
 
 
+            val.clearAll(panLogin);
+            val.clearAll(panFunc);
+
         }
 
         

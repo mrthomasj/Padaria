@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panProd = new System.Windows.Forms.Panel();
+            this.txtVlr = new System.Windows.Forms.TextBox();
             this.lblVlr = new System.Windows.Forms.Label();
             this.txtQtd = new System.Windows.Forms.TextBox();
             this.lblQtd = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNm = new System.Windows.Forms.Label();
             this.btnCad = new System.Windows.Forms.Button();
-            this.txtVlr = new System.Windows.Forms.TextBox();
             this.panProd.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +59,16 @@
             this.panProd.Name = "panProd";
             this.panProd.Size = new System.Drawing.Size(520, 132);
             this.panProd.TabIndex = 1;
+            // 
+            // txtVlr
+            // 
+            this.txtVlr.Location = new System.Drawing.Point(18, 80);
+            this.txtVlr.Name = "txtVlr";
+            this.txtVlr.Size = new System.Drawing.Size(111, 20);
+            this.txtVlr.TabIndex = 21;
+            this.txtVlr.Text = "00,00";
+            this.txtVlr.Enter += new System.EventHandler(this.txtVlr_Enter);
+            this.txtVlr.Leave += new System.EventHandler(this.txtVlr_Leave);
             // 
             // lblVlr
             // 
@@ -143,16 +153,6 @@
             this.btnCad.UseVisualStyleBackColor = true;
             this.btnCad.Click += new System.EventHandler(this.btnCad_Click);
             // 
-            // txtVlr
-            // 
-            this.txtVlr.Location = new System.Drawing.Point(18, 80);
-            this.txtVlr.Name = "txtVlr";
-            this.txtVlr.Size = new System.Drawing.Size(111, 20);
-            this.txtVlr.TabIndex = 21;
-            this.txtVlr.Text = "00,00";
-            this.txtVlr.Enter += new System.EventHandler(this.txtVlr_Enter);
-            this.txtVlr.Leave += new System.EventHandler(this.txtVlr_Leave);
-            // 
             // CadProdForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,7 +161,7 @@
             this.Controls.Add(this.btnCad);
             this.Controls.Add(this.panProd);
             this.Name = "CadProdForm";
-            this.Text = "CadProdForm";
+            this.Text = "Cadastro de produtos";
             this.panProd.ResumeLayout(false);
             this.panProd.PerformLayout();
             this.ResumeLayout(false);

@@ -49,6 +49,7 @@ namespace Padaria
             if(Application.OpenForms.OfType<UserForm>().Count() == 1)
             {
                 MessageBox.Show("Utilize a tela de cadastro aberta!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.OpenForms.OfType<UserForm>().First().Focus();
             }
             else
             {
@@ -63,6 +64,7 @@ namespace Padaria
             if (Application.OpenForms.OfType<CadProdForm>().Count() == 1)
             {
                 MessageBox.Show("Utilize a tela de cadastro aberta!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.OpenForms.OfType<CadProdForm>().First().Focus();
             }
             else
             {
@@ -77,6 +79,7 @@ namespace Padaria
             if (Application.OpenForms.OfType<EstoqueForm>().Count() == 1)
             {
                 MessageBox.Show("Utilize a tela de cadastro aberta!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.OpenForms.OfType<EstoqueForm>().First().Focus();
             }
             else
             {

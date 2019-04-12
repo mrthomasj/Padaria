@@ -32,3 +32,9 @@ C:\Users\Neko\documents\visual studio 2017\Projects\Padaria\Padaria\bin\Debug\Pa
 C:\Users\Neko\documents\visual studio 2017\Projects\Padaria\Padaria\bin\Debug\Padaria.application
 C:\Users\Neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.exe.manifest
 C:\Users\Neko\documents\visual studio 2017\Projects\Padaria\Padaria\obj\Debug\Padaria.application
+C:\Padaria\Padaria\bin\Debug\Padaria.exe.manifest
+C:\Padaria\Padaria\bin\Debug\Padaria.application
+C:\Padaria\Padaria\obj\Debug\Padaria.CadProdForm.resources
+C:\Padaria\Padaria\obj\Debug\Padaria.EstoqueForm.resources
+C:\Padaria\Padaria\obj\Debug\Padaria.exe.manifest
+C:\Padaria\Padaria\obj\Debug\Padaria.application

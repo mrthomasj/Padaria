@@ -53,8 +53,19 @@ namespace Padaria
         {
             try
             {
-                int.Parse(str);
-                return true;
+                foreach (char ch in str)
+                {
+                    int i = int.Parse(ch.ToString());
+                }
+                if(str.Length <=11)
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Número de telefone deve conter até 11 digitos com DDD", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
             catch (Exception)
             {
@@ -129,9 +140,9 @@ namespace Padaria
             return true;
         }
 
-        public void clearAll(Form frm)
+        public void clearAll(Panel p)
         {
-            foreach(Control ct in frm.Controls)
+            foreach(Control ct in p.Controls)
             {
                 if (ct is TextBox) ct.Text = "";
                 if (ct is ComboBox) ct.Text = "";

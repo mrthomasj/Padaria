@@ -51,18 +51,18 @@
             this.lblCpf = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNm = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panLogin = new System.Windows.Forms.Panel();
             this.txtRePass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.btnCad = new System.Windows.Forms.Button();
             this.btnShowPass = new System.Windows.Forms.Button();
             this.btnShowRePass = new System.Windows.Forms.Button();
+            this.btnCad = new System.Windows.Forms.Button();
             this.panFunc.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // panFunc
@@ -99,7 +99,7 @@
             this.txtCep.Location = new System.Drawing.Point(18, 131);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(111, 20);
-            this.txtCep.TabIndex = 21;
+            this.txtCep.TabIndex = 9;
             // 
             // lblCep
             // 
@@ -115,7 +115,7 @@
             this.txtTel2.Location = new System.Drawing.Point(392, 131);
             this.txtTel2.Name = "txtTel2";
             this.txtTel2.Size = new System.Drawing.Size(111, 20);
-            this.txtTel2.TabIndex = 19;
+            this.txtTel2.TabIndex = 11;
             // 
             // lblTel2
             // 
@@ -131,7 +131,7 @@
             this.txtTel1.Location = new System.Drawing.Point(235, 131);
             this.txtTel1.Name = "txtTel1";
             this.txtTel1.Size = new System.Drawing.Size(111, 20);
-            this.txtTel1.TabIndex = 17;
+            this.txtTel1.TabIndex = 10;
             // 
             // lblTel1
             // 
@@ -148,7 +148,7 @@
             this.cmbBoxUf.Location = new System.Drawing.Point(527, 84);
             this.cmbBoxUf.Name = "cmbBoxUf";
             this.cmbBoxUf.Size = new System.Drawing.Size(121, 21);
-            this.cmbBoxUf.TabIndex = 15;
+            this.cmbBoxUf.TabIndex = 8;
             this.cmbBoxUf.Text = "Selecione...";
             // 
             // label4
@@ -165,7 +165,7 @@
             this.txtCidade.Location = new System.Drawing.Point(392, 85);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(111, 20);
-            this.txtCidade.TabIndex = 13;
+            this.txtCidade.TabIndex = 7;
             // 
             // lblCidade
             // 
@@ -181,7 +181,7 @@
             this.txtBairro.Location = new System.Drawing.Point(235, 85);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(111, 20);
-            this.txtBairro.TabIndex = 11;
+            this.txtBairro.TabIndex = 6;
             // 
             // lblBairro
             // 
@@ -197,7 +197,7 @@
             this.txtLogr.Location = new System.Drawing.Point(18, 85);
             this.txtLogr.Name = "txtLogr";
             this.txtLogr.Size = new System.Drawing.Size(192, 20);
-            this.txtLogr.TabIndex = 9;
+            this.txtLogr.TabIndex = 5;
             // 
             // lblLog
             // 
@@ -214,7 +214,7 @@
             this.txtDtNasc.Mask = "00/00/0000";
             this.txtDtNasc.Name = "txtDtNasc";
             this.txtDtNasc.Size = new System.Drawing.Size(100, 20);
-            this.txtDtNasc.TabIndex = 7;
+            this.txtDtNasc.TabIndex = 3;
             this.txtDtNasc.ValidatingType = typeof(System.DateTime);
             // 
             // lvlDtNasc
@@ -231,7 +231,7 @@
             this.txtMatric.Location = new System.Drawing.Point(527, 30);
             this.txtMatric.Name = "txtMatric";
             this.txtMatric.Size = new System.Drawing.Size(61, 20);
-            this.txtMatric.TabIndex = 5;
+            this.txtMatric.TabIndex = 4;
             // 
             // lblMatric
             // 
@@ -247,7 +247,7 @@
             this.txtCpf.Location = new System.Drawing.Point(235, 30);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(111, 20);
-            this.txtCpf.TabIndex = 3;
+            this.txtCpf.TabIndex = 2;
             // 
             // lblCpf
             // 
@@ -274,27 +274,27 @@
             this.lblNm.TabIndex = 0;
             this.lblNm.Text = "Nome:";
             // 
-            // panel1
+            // panLogin
             // 
-            this.panel1.Controls.Add(this.txtRePass);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txtPass);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtLogin);
-            this.panel1.Controls.Add(this.lblLogin);
-            this.panel1.Controls.Add(this.btnShowPass);
-            this.panel1.Controls.Add(this.btnShowRePass);
-            this.panel1.Location = new System.Drawing.Point(68, 229);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(796, 51);
-            this.panel1.TabIndex = 1;
+            this.panLogin.Controls.Add(this.txtRePass);
+            this.panLogin.Controls.Add(this.label2);
+            this.panLogin.Controls.Add(this.txtPass);
+            this.panLogin.Controls.Add(this.label1);
+            this.panLogin.Controls.Add(this.txtLogin);
+            this.panLogin.Controls.Add(this.lblLogin);
+            this.panLogin.Controls.Add(this.btnShowPass);
+            this.panLogin.Controls.Add(this.btnShowRePass);
+            this.panLogin.Location = new System.Drawing.Point(68, 229);
+            this.panLogin.Name = "panLogin";
+            this.panLogin.Size = new System.Drawing.Size(796, 51);
+            this.panLogin.TabIndex = 1;
             // 
             // txtRePass
             // 
             this.txtRePass.Location = new System.Drawing.Point(392, 19);
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.Size = new System.Drawing.Size(111, 20);
-            this.txtRePass.TabIndex = 17;
+            this.txtRePass.TabIndex = 14;
             this.txtRePass.UseSystemPasswordChar = true;
             // 
             // label2
@@ -311,7 +311,7 @@
             this.txtPass.Location = new System.Drawing.Point(235, 19);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(111, 20);
-            this.txtPass.TabIndex = 15;
+            this.txtPass.TabIndex = 13;
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // label1
@@ -328,7 +328,7 @@
             this.txtLogin.Location = new System.Drawing.Point(18, 19);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(111, 20);
-            this.txtLogin.TabIndex = 13;
+            this.txtLogin.TabIndex = 12;
             // 
             // lblLogin
             // 
@@ -338,16 +338,6 @@
             this.lblLogin.Size = new System.Drawing.Size(36, 13);
             this.lblLogin.TabIndex = 12;
             this.lblLogin.Text = "Login:";
-            // 
-            // btnCad
-            // 
-            this.btnCad.Location = new System.Drawing.Point(68, 313);
-            this.btnCad.Name = "btnCad";
-            this.btnCad.Size = new System.Drawing.Size(158, 24);
-            this.btnCad.TabIndex = 2;
-            this.btnCad.Text = "Cadastrar";
-            this.btnCad.UseVisualStyleBackColor = true;
-            this.btnCad.Click += new System.EventHandler(this.btnCad_Click);
             // 
             // btnShowPass
             // 
@@ -381,21 +371,31 @@
             this.btnShowRePass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShowRePass_MouseDown);
             this.btnShowRePass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShowRePass_MouseUp);
             // 
+            // btnCad
+            // 
+            this.btnCad.Location = new System.Drawing.Point(68, 313);
+            this.btnCad.Name = "btnCad";
+            this.btnCad.Size = new System.Drawing.Size(158, 24);
+            this.btnCad.TabIndex = 15;
+            this.btnCad.Text = "Cadastrar";
+            this.btnCad.UseVisualStyleBackColor = true;
+            this.btnCad.Click += new System.EventHandler(this.btnCad_Click);
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 611);
             this.Controls.Add(this.btnCad);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panLogin);
             this.Controls.Add(this.panFunc);
             this.Name = "UserForm";
-            this.Text = "UserForm";
+            this.Text = "Cadastro de funcionário";
             this.Load += new System.EventHandler(this.UserForm_Load);
             this.panFunc.ResumeLayout(false);
             this.panFunc.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panLogin.ResumeLayout(false);
+            this.panLogin.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -423,7 +423,7 @@
         private System.Windows.Forms.Label lblTel1;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label lblBairro;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panLogin;
         private System.Windows.Forms.TextBox txtRePass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPass;
